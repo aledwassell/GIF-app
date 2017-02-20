@@ -1,0 +1,11 @@
+#search {
+  width: 20em;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.callout {
+  border: none;
+  margin-bottom: 0;
+}
