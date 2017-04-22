@@ -4,7 +4,8 @@ $(document).ready(function(){
 		,target = $('#target')
 		,input = $('input');
 	
-	$('input').attr('placeholder', 'Your Giff');
+	$('input').attr('placeholder', 'your word...');
+	
 	$('input').on('click', function(){
 		$('input').val('');
 	});
