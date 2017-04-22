@@ -3,6 +3,8 @@ $(document).ready(function(){
 		,key = '&api_key=dc6zaTOxFJmzC'
 		,target = $('#target')
 		,input = $('input');
+	
+	$('input').attr('placeholder', 'Your Giff');
 
 	$('input').on('change', getData);
 	function getData() {
@@ -11,6 +13,9 @@ $(document).ready(function(){
 			gotData(giff);
 		});
 	};
+	$('input').on('click', function(){
+		$('input').val('');
+	});
 	function gotData(giff){
 		var index = 0;
 		while(index < giff.data.length){
