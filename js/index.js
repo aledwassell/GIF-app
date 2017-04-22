@@ -5,6 +5,9 @@ $(document).ready(function(){
 		,input = $('input');
 	
 	$('input').attr('placeholder', 'Your Giff');
+	$('input').on('click', function(){
+		$('input').val('');
+	});
 
 	$('input').on('change', getData);
 	function getData() {
@@ -13,9 +16,6 @@ $(document).ready(function(){
 			gotData(giff);
 		});
 	};
-	$('input').on('click', function(){
-		$('input').val('');
-	});
 	function gotData(giff){
 		var index = 0;
 		while(index < giff.data.length){
